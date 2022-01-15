@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Open+Sans&family=Roboto+Slab&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+/*----------- header style start------------ */
+
+header{
+    height: 162px;
+}
+
+nav{
+    width: 402px;
+    display: inline-block;
+    margin: 66px 102px;
+}
+
+@media (max-width:992px) {
+    nav{
+        display: block;
+        margin: 100px 192px;
+    }
+}
+
+@media (max-width:688px) {
+    nav{
+        display: block;
+        margin: 100px 140px;
+    }
+}
+
+nav h1{
+    font-size: 37px;
+    color: #03203C;
+    font-weight: bold;
+}
+
+/*----------- header style end------------ */
+
+/*----------- heading section style start------- */
+.heading{
+    height: 600px;    
+    display: flex;
+    justify-content: space-around;
+}
+.headingTitle{
+    width: 647px;
+    height: 451px;
+}
+
+.headingTitle h1{
+    font-size: 60px;
+    display: block;
+    margin: 88px 0px 0px;
+    color: #03203C;;
+}
+
+.headingTitle p{
+    line-height: 35px;
+    display: block;
+    margin: 15px 0px;
+}
+
+.headingTitle a{
+    padding: 12px 31px;
+    display: block;
+    width: 130px;
+    border-radius: 25px;
+    background-color: #03203C;
+    color: papayawhip;
+}
+
+.headingTitle a span{
+    margin-left: 13px;
+}
+.headingImg{
+    width: 490px;
+    height: 490px;
+    background-image: url("images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headingImg img{
+    margin: 27px;
+}
+
+
+@media (max-width:992px) {
+    .heading{
+        flex-direction: column-reverse;
+        margin-top: 180px;
+    }
+
+    .headingImg{
+        margin-top: 192px;
+        margin-left: 150px;
+        background-size: contain;
+    }
+
+    .headingTitle{
+        margin-bottom: 374px;
+        margin-left: 63px;
+        text-align: center;
+        margin-top: 46px;
+    }
+
+    .headingTitle h1{
+        margin: 0;
+    }
+
+    .headingTitle p{
+        font-size: 18px;
+        margin-right: -18px;
+    }
+    .headingTitle a{
+        margin-right: -8px;
+        display: inline-block;
+        border-radius: 41px;
+        font-size: 21px;
+        width: 203px;
+        padding: 18px 14px;
+    }
+}
+
+@media (max-width:688px) {
+    .heading{
+        flex-direction: column-reverse;
+        margin-top: 180px;
+    }
+
+    .headingImg{
+        margin-top: 192px;
+        margin-left: 99px;
+        background-size: contain;
+    }
+
+    .headingTitle{
+        margin-bottom: 374px;
+        margin-left: 12px;
+        text-align: center;
+        margin-top: 46px;
+    }
+
+    .headingTitle h1{
+        margin: 0;
+    }
+
+    .headingTitle p{
+        font-size: 27px;
+        margin-right: -18px;
+    }
+    .headingTitle a{
+        margin-right: -8px;
+        display: inline-block;
+        border-radius: 49px;
+        font-size: 25px;
+        width: 203px;
+        padding: 32px 33px;
+    }
+}
+/*----------- heading section style end------- */
+
+
+/*----------- product section style start------- */
+
+.totalProducts{
+    height: 1610px;
+}
+.title{
+    height: 87px;
+    width: 237px;
+    margin:auto;
+    color: #03203C;
+}
+
+.title h1{
+    font-size: 29px;
+}
+
+
+@media (max-width:992px) {
+    
+    .title{
+        display: block;
+        margin-left:249px;
+        margin-top: 185px;
+        width: 309px;
+    }
+
+    .title h1{
+        font-size: 35px;
+    }
+}
+
+@media (max-width:688px) {
+    
+    .title{
+        display: block;
+        margin-left:187px;
+        margin-top: 185px;
+        width: 346px;
+    }
+
+    .title h1{
+        font-size: 42px;
+    }
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 26px;
+    justify-items: center;
+}
+
+article{
+    background: white;
+    width: 302px;
+    height: 437px;
+    padding: 11px;
+    border-radius: 4px;
+    box-shadow: -1px -1px 10px 0px powderblue;
+}
+
+@media (max-width:992px) {
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    article{
+        margin-left: 0;
+    }
+}
+
+@media (max-width:688px) {
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 32px;
+    }
+    article{
+        margin-left: 190px;
+    }
+}
+.productImg{
+    overflow: hidden;
+}
+.productImg img{
+    transition: transform 0.8s;
+}
+.productImg img:hover{
+    transform: scale(1.1);
+}
+
+.productInfo h3{
+    font-size: 27px;
+}
+
+.productInfo p{
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.totalRating{
+    display: flex;
+    align-items: center;
+}
+
+.star{
+    color: yellowgreen;
+    font-size: 12px;
+}
+.rating{
+    width: 150px;
+    padding: 8px 0px;
+}
+
+.rate{
+    width: 150px;
+    padding: 1px 0px;
+    margin-bottom: 11px;
+}
+
+.rate p{
+    font-size: 14px;
+}
+
+.feature p{
+   color: #03203C;
+}
+
+.link{
+    width: 200px;
+    float: right;
+    margin-top: 26px;
+    padding: 9px;
+}
+
+.link a{
+    color: #03203C;
+    margin-left: -17px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.link span{
+    margin-left: 20px;
+}
+
+@media (max-width:992px) {
+    .link{
+        position: relative;
+        left: -520px;
+    }
+}
+
+@media (max-width:688px) {
+    .link{
+        position: relative;
+        left: 175px;
+        top: 3px;
+    }
+}
+
+/*--------------- product section style end--------------- */
+
+/*--------------- Accessories section style start-------------- */
+
+.accessories{
+    height: 500px;
+    margin-top: 92px;
+    margin-bottom:36px;
+}
+
+@media (max-width:688px) {
+    .accessories{
+        width: 100%;
+    }
+}
+.vloggingProduct{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.vloggingImg{
+    width: 350px;
+    height: 242px;
+}
+
+.vloggingImg img{
+    width: 350px;
+    border-radius: 7px;
+}
+
+@media (max-width:992px) {
+    .vloggingProduct{
+        margin-top: 1000px;
+    }
+    .vloggingImg img{
+        width: 300px;
+        margin-left: 21px;
+    }
+}
+
+@media (max-width:688px) {
+    .vloggingProduct{
+        margin-top: 3000px;
+        flex-direction: column-reverse;
+    }
+    .vloggingImg img{
+        width: 100%;
+        margin-left: 178px;
+        margin-top: 22px;
+    }
+}
+.vlogInfo{
+    width: 450px;
+    height: 250px;
+}
+
+.vlogInfo h1{
+    font-size: 31px;
+    margin-bottom: 18px;
+}
+
+.vlogInfo p{
+    line-height: 36px;
+    margin-bottom: 17px;
+    color:#03203C ;
+}
+
+.vlogInfo a{
+    padding: 10px 30px;
+    margin-top: 13px;
+    display: inline-block;
+    background-color: #03203C;
+    color: papayawhip;
+}
+
+.vlogInfo a span{
+    margin-left: 18px;
+    color: papayawhip;
+}
+
+
+@media (max-width:992px) {
+
+    .vlogInfo h1{
+        font-size: 24px;
+        margin-left: 64px;
+    }
+
+    .vlogInfo p{
+        font-size: 13px;
+        margin-left: 66px;
+    }
+
+    .vlogInfo a{
+        margin-top: -9px;
+        margin-left: 65px;
+    }
+}
+
+@media (max-width:688px) {
+    .vlogInfo{
+        margin-left: 97px;
+        text-align: center;
+    }
+    .vlogInfo h1{
+        font-size: 32px;
+        margin-left: 64px;
+    }
+
+    .vlogInfo p{
+        font-size: 19px;
+        margin-left: 66px;
+    }
+
+    .vlogInfo a{
+        margin-top: -9px;
+        margin-left: 65px;
+        padding: 20px 49px;
+        font-size: 23px;
+    }
+}
+/*--------------- Accessories section style end-------------- */
+
+
+/*-------------- footer section style start------------------ */
+
+footer{
+    padding: 0 50%;
+    height: 192px;
+    color: papayawhip;
+    background-color: #242B2E;
+}
+
+@media (max-width:688px) {
+    footer{
+        padding: 0 100%;
+    }
+}
+
+.container{
+    width: 400px;
+    height: 185px;
+    display: block;
+    margin: 0px -188px;
+    text-align: center;
+}
+
+.container h3{
+    font-size: 26px;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.copyright{
+    margin-top: 13px;
+    margin-bottom: -19px;
+}
+
+.copyright p{
+    font-size: 13px;
+    line-height: 28px;
+}
+
+.socialMedia{
+    height: 50px;
+    margin-top: 31px;
+}
+.socialMedia ul li{
+    display: inline;
+}
+
+.socialMedia ul li a{
+    border: 1px solid papayawhip;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 10px;
+    color: papayawhip;
+    transition: all 0.8s;
+}
+
+.socialMedia ul li a:hover{
+    background-color: papayawhip;
+    color: #03203C;
+}
+.socialMedia ul li a i{
+    font-size: 20px;
+}
+
+
+/*-------------- footer section style end------------------ */
